@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+<head>
+    <meta charset="UTF-8">
+    <title>How to 3D Testimonial Carousel using Materialize CSS</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/style.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Nunito'rel='stylesheet' >
+</head>
+<body>
+    
+    <div style="background-color:linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(222, 239, 255, 0.5) 0%);">
+
+
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <img  class="a1" src="assets/highlights1.jpg"> 
+        </a>
+        <a class="carousel-item" href="#">
+            <img src="assets/highlights2.jpg">
+        </a>
+        <a class="carousel-item" href="#">
+            <img src="assets/highlights4.jpg">
+        </a>
+        <a class="carousel-item" href="#">
+            <img src="assets/highlights5.jpg">
+        </a>
+        <a class="carousel-item" href="#">
+            <img src="assets/highlights2.jpg">
+        </a>
+      
+   </div>
+
+
+   <div class="c1">
+
+    <div class="row">
+        <div class="col-4">
+            <img src="assets/highlights2.jpg">  
+        </div>
+
+        <div class="col-6">
+            <p>
+                Discover Express
+Lifelines of Gurugram
+            </p>
+
+            <p> Explore the internal arterial roads near DLF City Phase I, II, III connecting Delhi-Jaipur Expressway (NH-48), Mehrauli-Gurugram Road and Raghvendra Marg with Jacaranda Marg, Akashneem Marg, Dakshin Marg and Bougainvillea Marg to a network of assisting pathways.</p>
+        </div>
+    </div>
+   </div>
+
+
+
+</div>
+    
+    
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+			padding: 700
+	});
+	autoplay();
+	function autoplay() {
+		$('.carousel').carousel('next');
+		setTimeout(autoplay, 4500);
+	}
+  });
+</script>
+</body>
+</html>
+
+
+
