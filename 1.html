@@ -18,37 +18,75 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img style="width: 80%;" src="./assets/logo.svg"> </a>
+
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item " style="margin-top:3%;">
+                        OVERVIEW
+                    </li>
+                    <li class=" nav-item " style="margin-top:3%; ">
+                        HIGHLIGHTS </li>
+                    <li class="nav-item " style="margin-top:3%;">
+                        LOCATION </li>
+                    <li class=" nav-item " style="margin-top:3%; ">
+                        CLUB
+                    </li>
+                    <li class="nav-item " style="margin-top:3%;">
+                        ABOUT
+                    </li>
+                    <li class=" nav-item ">
+                        <img src="./assets/dlf-logo-white.svg " style="width: 70%; margin-top:10px; "> </li>
+                    <li class="nav-item ">
+                        <button style="    border-color: white;
+                        color: white;
+                        padding-left:20px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-right: 20px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        background-color:#092D58;
+                        width:140px;
+                        cursor: pointer;
+                        margin-top:30px;">Enquire Now</button> </li>
+
+
+
+
+                </ul>
+            </div>
+            <!-- Add your menu items here -->
         </div>
-      </nav>
+</nav>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navbar = document.getElementById("navbar");
+    
+        window.addEventListener("scroll", function() {
+            if (window.scrollY > 0) {
+                navbar.classList.add("solid");
+                navbar.classList.remove("transparent");
+            } else {
+                navbar.classList.remove("solid");
+                navbar.classList.add("transparent");
+         }
+    });
+    });
+</script>
 
 <div class="a1" >
 
 
 
-<div class="container text-center">
-<div class="row justify-content-start">
+
+<div class="row">
 
   <div class="col-2"> 
     <div class="image">
@@ -66,15 +104,14 @@
      
     <div class="row">
     <div class="a6">
-    <button class="a5">ENQUIRE NOW </button>
+    <button class="hover-button">ENQUIRE NOW </button>
     </div>
     <div class="a7">
-    <button class="a5">ENQUIRE NOW </button>
+    <button class="hover-button">ENQUIRE NOW </button>
     </div>
 </div>
 </div>
 
-</div>
 </div>
 
 
@@ -89,7 +126,9 @@
 
 <div class="row">
 
-<div class="col-4">
+    <div class="col-2">
+    </div>
+<div class="col-3">
     <div class="row">
         <div class="col-4">
    <img src="assets/icon1.jpg" class="a13" alt="...">
@@ -104,7 +143,7 @@
 </div>  
 
 
-<div class="col-4">
+<div class="col-2">
     <div class="row">
         <div class="col-4">
    <img src="assets/icon1.jpg" class="a13" alt="...">
@@ -118,26 +157,26 @@
     </div>
 </div>  
 
-<div class="col-4">
+<div class="col-3">
     <div class="row">
         <div class="col-4">
    <img src="assets/icon1.jpg" class="a13" alt="...">
         </div>
-        <div class="col-6">
+        <div class="col-8">
    <p class="a12">Urban themed-Homes</p>
         </div>
-        <div class="col-2">
-   <div class="vl"></div>
-        </div>
-    </div>
+
 </div>  
  
+</div>
+
+<div class="col-2">
 </div>
 
 
 
 
-<div style="margin-top:300px; padding:0px 50px 0px 50px;">
+<div style="margin-top:300px; margin-left:130px;margin-right:130px;">
     <div class="row">
     
     
@@ -212,12 +251,10 @@ elevator and staircase lobby powered with CCTV cameras.</p>
             -webkit-font-smoothing: antialiased;
             font-family: 'Nunito', sans-serif;
             font-weight: 400;
-            color: #4d4c4f;
             line-height: 1.4;
             letter-spacing: 0.5px;
             color:#092D58;
-            width:500px;
-        }"> Explore the internal arterial roads near DLF City Phase I, II, III connecting Delhi-Jaipur Expressway (NH-48), Mehrauli-Gurugram Road and Raghvendra Marg with Jacaranda Marg, Akashneem Marg, Dakshin Marg and Bougainvillea Marg to a network of assisting pathways.</p>
+            width:500px;"> Explore the internal arterial roads near DLF City Phase I, II, III connecting Delhi-Jaipur Expressway (NH-48), Mehrauli-Gurugram Road and Raghvendra Marg with Jacaranda Marg, Akashneem Marg, Dakshin Marg and Bougainvillea Marg to a network of assisting pathways.</p>
         </div>
     </div>
    
@@ -225,7 +262,16 @@ elevator and staircase lobby powered with CCTV cameras.</p>
 
     <div class="row">
         <div class="col-4">
-            <p style="margin-left:100px;margin-top:140px;width:500px;"> DLF Cybercity is in close proximity to the project with metro stations at MG Road & Sikanderpur being nearby. The location is ideal for corporate professionals and business owners. It also gives access to prominent social avenues in the city. </p>
+            <p style="margin-left:150px;margin-top:140px;width:500px;
+            margin-top:140px;
+            width: 100%;
+            font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    color:#092D58;
+    line-height: 1.4;
+    letter-spacing: 0.5px;"> DLF Cybercity is in close proximity to the project with metro stations at MG Road & Sikanderpur being nearby. The location is ideal for corporate professionals and business owners. It also gives access to prominent social avenues in the city. </p>
         </div>
 
 
@@ -237,26 +283,36 @@ elevator and staircase lobby powered with CCTV cameras.</p>
                 <div class="slider">
                   <div class="slide" id="slide1">
                     <div>
-                    <p style="color:white;margin-left:-190px;
+                    <p style="color:white;margin-left:-410px;
                     font-size:26px;
                     font-family:'IBM Plex Serif' , serif;"> Office </p>
-                    <ul >
-                        <li style="margin-top:0px;margin-left:-230px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
-                        <li style="margin-left:-230px;pxcolor:white;font-size:14px;"> Dlf Cybercity -3km </li>
-                        <li style="margin-left:-230px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
-                        <li style="margin-left:-230px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
+                    <ul style="  -webkit-font-smoothing: antialiased;
+                    font-family: 'Nunito', sans-serif;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;" >
+                        <li style="margin-top:0px;margin-left:-420px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
+                        <li style="margin-left:-420px;pxcolor:white;font-size:14px;"> Dlf Cybercity -3km </li>
+                        <li style="margin-left:-420px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
+                        <li style="margin-left:-420px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
             
                     </ul>
                 </div>
                   </div>
                   <div class="slide" id="slide2">
                     <div>
-                        <p style="color:white;margin-left:-120px;"> StairCases </p>
-                        <ul  >
-                            <li style="margin-top:0px;margin-left:-200px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
-                            <li style="margin-left:-200px;pxcolor:white;font-size:14px;font-size:14px;"> Dlf Cybercity -3km </li>
-                            <li style="margin-left:-200px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
-                            <li style="margin-left:-200px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
+                        <p style="color:white;margin-left:-410px;
+                        font-family: 'IBM Plex Serif', serif;
+    font-size: 26px;"> StairCases </p>
+                        <ul  style="  -webkit-font-smoothing: antialiased;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        letter-spacing: 0.5px;" >
+                            <li style="margin-top:0px;margin-left:-420px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
+                            <li style="margin-left:-420px;pxcolor:white;font-size:14px;font-size:14px;"> Dlf Cybercity -3km </li>
+                            <li style="margin-left:-420px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
+                            <li style="margin-left:-420px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
                 
                         </ul>
                     </div>
@@ -264,12 +320,16 @@ elevator and staircase lobby powered with CCTV cameras.</p>
                   </div>
                   <div class="slide" id="slide3">
                     <div>
-                        <p style="color:white;margin-left:-120px;"> Lift Lobby </p>
-                        <ul >
-                            <li style="margin-top:0px;margin-left:-200px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
-                        <li style="margin-left:-200px;pxcolor:white;font-size:14px;"> Dlf Cybercity -3km </li>
-                        <li style="margin-left:-200px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
-                        <li style="margin-left:-200px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
+                        <p style="color:white;margin-left:-410px;"> Lift Lobby </p>
+                        <ul  style="  -webkit-font-smoothing: antialiased;
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        letter-spacing: 0.5px;">
+                            <li style="margin-top:0px;margin-left:-420px;color:white;font-size:14px;"> DLF Cyberpark -2km </li>
+                        <li style="margin-left:-420px;pxcolor:white;font-size:14px;"> Dlf Cybercity -3km </li>
+                        <li style="margin-left:-420px;color:white;font-size:14px;"> Udyog Vihar Phase -II 3.7km  </li>
+                        <li style="margin-left:-420px;color:white;font-size:14px;"> Horizon Center Dlf5 7km </li>
                 
                         </ul>
                     </div>
@@ -291,20 +351,6 @@ elevator and staircase lobby powered with CCTV cameras.</p>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div style="background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(222, 239, 255, 0.5) 0%); margin-top:200px;" >
 
     <div>
@@ -314,38 +360,56 @@ elevator and staircase lobby powered with CCTV cameras.</p>
     </div>    
 
 
-<div  >
-    <div class="row">
-    
-    
-        <div  class="col-6">
-            <img src="assets/8.jpg" class="b2"  alt="...">
-    
-        </div>
-    
-        <div class="col-6">
-            <div class="b3">
-                <div style="margin-left:50px;">
-            <p class="b7"> Door </p> 
-                </div>
-            <ul>
-                <li class="b6" >Painted frame with painted/laminated flush doors</li>
-    
-                <li class="b6" >Painted/polished frame with polished / laminated flush door</li>
-         
-    
-    
-            </ul>
-            </div> 
-            </div>
-    
 
-    </div>
-</div> 
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="row">
+                <div class="col-6">
+          <img src="assets/8.jpg"  style="width:500px;height:310px; margin-left :250px;" alt="Image 1">
+                </div>
+                <div class="col-6">
+          <div class="text-container">
+            <p>Door</p>
+            <ul>
+                <li class="b6">Painted frame with painted/laminated flush doors</li>
+                <li class="b6">Painted/polished frame with polished/laminated flush door</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="carousel-slide">
+            <div class="row">
+                <div class="col-6">
+          <img src="assets/highlights5.jpg" style="width:500px;height:310px; margin-left :250px;"   alt="Image 1">
+                </div>
+                <div class="col-6">
+    
+          <div class="text-container">
+            <p>Door</p>
+            <ul>
+                <li class="b6">Painted frame with painted/laminated flush doors</li>
+                <li class="b6">Painted/polished frame with polished/laminated flush door</li>
+            </ul>
+        </div>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Add more slides as needed -->
+    
+    <button id="nextBtn" class="abc"><i class="abc"></i></button>
+      </div>
+
 
 
 <div>
-    <p> Common Areas In The Building </p>
+    <p style="    font-size: 20px;
+    line-height: 46px;
+    font-family: 'IBM Plex Serif', serif;
+    color:#092D58;
+    text-align:center;"> Common Areas In The Building </p>
 <div>    
 
   <div class="row">
@@ -353,10 +417,12 @@ elevator and staircase lobby powered with CCTV cameras.</p>
     <div class="col-4">
         <div style="background-color:#092d58; margin-left:80px;height:200px;width:350px;">
             <img src="assets/icon1.jpg"  alt="...">
-            <p style="color:white;"> Staircases </p>
+            <p style="color:white;font-size:18px;line-height:46px;text-align:left;
+            font-family:'IBM Plex Serif';
+            margin-left:10px;"> Staircases </p>
             <ul>
-                <li style="color:white;">Kota Stone/ Indian Stone/Granite </li>
-                <li style="color:white;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;">Kota Stone/ Indian Stone/Granite </li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
             </UL>    
         </div>
 
@@ -365,10 +431,11 @@ elevator and staircase lobby powered with CCTV cameras.</p>
     <div class="col-4">
         <div style="background-color:#092d58; margin-left:80px;height:200px;width:350px;">
             <img src="assets/icon1.jpg"  alt="...">
-            <p style="color:white;"> Staircases </p>
+            <p style="color:white;font-size:18px;line-height:46px;text-align:left;
+            font-family:'IBM Plex Serif';margin-left:10px;"> Staircases </p>
             <ul>
-                <li style="color:white;">Kota Stone/ Indian Stone/Granite </li>
-                <li style="color:white;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;">Kota Stone/ Indian Stone/Granite </li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
             </UL>
                 </div>
     </div>
@@ -376,10 +443,11 @@ elevator and staircase lobby powered with CCTV cameras.</p>
     <div class="col-4">
         <div style="background-color:#092d58; margin-left:80px;height:200px;width:350px;margin-right:80px;">
             <img src="assets/icon1.jpg"  alt="...">
-            <p style="color:white;"> Staircases </p>
+            <p style="color:white;font-size:18px;line-height:46px;text-align:left;
+            font-family:'IBM Plex Serif';margin-left:10px;"> Staircases </p>
             <ul>
-                <li style="color:white;">Kota Stone/ Indian Stone/Granite </li>
-                <li style="color:white;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;">Kota Stone/ Indian Stone/Granite </li>
+                <li style="color:white;font-family:'Nunito', sans-serif;letter-spacing:0.5px;font-size:14px;margin-left:10px;"> Flat oil Paint/Acrylic Emulsion/OBD</li>
             </UL>
                 </div>
     </div>
@@ -410,27 +478,27 @@ elevator and staircase lobby powered with CCTV cameras.</p>
             <div class="row">
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="..."> 
-                    <p style="color:white"> Swimming pool </p>  
+                    <p style="color:white; width:120px;text-align:center;"> Swimming pool </p>  
                 </div>
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="...">
-                    <p style="color:white"> Tennis court </p>
+                    <p style="color:white;width:120px;text-align:center;"> Tennis court </p>
                 </div>
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="...">
-                    <p style="color:white"> World-class gym </p>
+                    <p style="color:white;width:120px;text-align:center;"> World-class gym </p>
                 </div>
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="...">
-                    <p style="color:white"> Restaurant </p>
+                    <p style="color:white;width:120px;text-align:center;"> Restaurant </p>
                 </div>
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="...">
-                    <p style="color:white"> Airconditioned ballroom</p>
+                    <p style="color:white;width:120px;text-align:center;"> Airconditioned ballroom</p>
                 </div>
                 <div class="col-2">
                     <img src="assets/icon1.jpg"  alt="...">
-                    <p style="color:white"> Party lawns </p>
+                    <p style="color:white;width:120px;text-align:center;"> Party lawns </p>
                 </div>
             </div>
         </div>
@@ -458,6 +526,7 @@ elevator and staircase lobby powered with CCTV cameras.</p>
     position: relative;
     margin-left:100px;
     margin-top:50px;
+    padding-top:20px;
     "> DLF Residential Developers Limited</p>
     <p style="color: #092D58;    font-size: 14px;
     font-weight: 700;
@@ -530,13 +599,47 @@ elevator and staircase lobby powered with CCTV cameras.</p>
 
 
 
-
-
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    const carouselSlides = $('.carousel-slide');
+    let currentSlide = 0;
     
+    function showSlide(index) {
+      carouselSlides.hide();
+      carouselSlides.eq(index).fadeIn();
+    }
     
+    function showNextSlide() {
+      currentSlide = (currentSlide + 1) % carouselSlides.length;
+      showSlide(currentSlide);
+    }
     
+    function showPreviousSlide() {
+      currentSlide = (currentSlide - 1 + carouselSlides.length) % carouselSlides.length;
+      showSlide(currentSlide);
+    }
+    
+    $('#nextBtn').on('click', function() {
+      showNextSlide();
+    });
+    
+    $('#prevBtn').on('click', function() {
+      showPreviousSlide();
+    });
+    
+    // Automatically switch slides every 5 seconds
+    setInterval(showNextSlide, 5000);
+    
+    // Show the initial slide
+    showSlide(currentSlide);
+  });
+</script>
 
 
 </body>
 </html>
+
+
+
+

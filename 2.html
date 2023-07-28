@@ -1,315 +1,129 @@
-<base href="https://cdn.jsdelivr.net/gh/linuxguist/owltext@main/">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel with Sliding Effect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .carousel-container {
+      display: flex;
+      overflow: hidden;
+      width: 1200px; /* Set the desired width of the carousel container */
+      transition: transform 0.6s ease-in-out;
+    }
 
-<link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet" />
+    .carousel-slide {
+      flex: 0 0 100%;
+    }
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>  
+    .carousel-slide img {
+      width: 500px;
+      height: auto;
+    }
 
-<link rel="stylesheet" type="text/css" href="profilepage.css">
+    .text-container {
+      padding: 10px;
+      background-color: white; /* Adjust the background color and opacity as needed */
+      color: black;
+    }
 
-<link rel="stylesheet" type="text/css" href="bootstrap.css">
-
-<link rel="stylesheet" type="text/css" href="Site.css">
-
-<link href="owl.carousel.css" type="text/css" rel="stylesheet"/>
-
-<link href="owl.theme.default.css" type="text/css" rel="stylesheet"/>
-
-<style type="text/css">
-
-.bannersec .owl-carousel .owl-text {
-   font-family: 'Roboto', sans-serif !important;
-   font-size: 18px !important;
-   height: 380px !important;  
-}    
-
-.bannersec .owl-carousel .owl-dots {
-    margin-bottom: 10px;
-    // display: none;
-}    
-
-.owl-nav {
-    display: none;
-}
-
-.bannersec .owl-carousel .owl-dots .owl-dot.active span {
-  background-color: teal !important;
-  border-color: #ccc !important;
-}
-
-.bannersec .owl-carousel .owl-carousel-img {
-  height: 400px !important;
-}
-
-@media only screen and (max-width: 800px)  {
-    /* a lot of styles for small screens */
- .bannersec .owl-carousel .owl-nav {
-  display: visible !important;
- }    
-}
-
-@media only screen and (min-width: 800px)  {
-    /* a lot of styles for big screens */
- .bannersec .owl-carousel .owl-nav {
-  display: visible !important;
- }    
-}
-  
-</style>
-
-<section class="bannersec carouselWidth">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 p-0">
-                    <div class="owl-carousel-flexbox">
-<div class="owl-carousel owl-theme owl-carousel-home slider-icons owl-loaded owl-drag" id="owl-carousel" tabindex="0">
-
-
-<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3540px, 0px, 0px); transition: all 0.25s ease 0s; width: 14160px;">
-
-    <div class="owl-item active" id="owl-carousel-1" role="option" aria-selected="true" style="width: 1170px; margin-right: 10px;" tabindex="-1"><div class="item" data-order="1">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="owl-carousel-img">
-                    <img src="https://cdn.jsdelivr.net/gh/linuxguist/tabs@main/1.jpg" alt="" role="img">
-            </div>
+    .text-container p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/8.jpg" alt="Image 1">
         </div>
-        <div class="col-sm-4">
-            <div class="owl-text">
-                    <span class="spanwithh3tag" aria-label="" role="row">Small Gardens</span>
-
-                    <p role="rowgroup"><a href="#" target="_blank" tabindex="0">Know More:</a> Small gardens have a lot more potential than you may realize. Whether dealing with a long narrow space behind a vintage home, a cramped backyard that lacks privacy, or a shabby garden at the rear of a brownstone the possibilities are endless.</p>
-
-
-            </div>
+        <div class="col-6">
+          <div class="text-container">
+            <p>Door</p>
+            <ul>
+              <li class="b6">Painted frame with painted/laminated flush doors</li>
+              <li class="b6">Painted/polished frame with polished/laminated flush door</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</div></div>
 
-<div class="owl-item" id="owl-carousel-2" role="option" tabindex="-1" aria-selected="false" style="width: 1170px; margin-right: 10px;"><div class="item" data-order="2">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="owl-carousel-img">
-                    <img src="https://cdn.jsdelivr.net/gh/linuxguist/tabs@main/2.jpg" alt="" role="img">
-            </div>
+    <div class="carousel-slide">
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/highlights5.jpg" alt="Image 2">
         </div>
-        <div class="col-sm-4">
-            <div class="owl-text">
-                    <span class="spanwithh3tag" aria-label="" role="row">Shade Gardens</span>
-
-                    <p role="rowgroup"><a href="#" id="" tabindex="-1">Know More</a> Not all shade is alike. While some plants can survive and thrive in full shade, others need some direct sunlight. The amount of light your yard receives will help determine your choice of plants.</p>
-
-
-            </div>
+        <div class="col-6">
+          <div class="text-container">
+            <p>Door</p>
+            <ul>
+              <li class="b6">Painted frame with painted/laminated flush doors</li>
+              <li class="b6">Painted/polished frame with polished/laminated flush door</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-</div></div>
+  </div>
 
-<div class="owl-item" id="owl-carousel-3" role="option" tabindex="-1" aria-selected="false" style="width: 1170px; margin-right: 10px;"><div class="item" data-order="3">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="owl-carousel-img">
-                    <img src="https://cdn.jsdelivr.net/gh/linuxguist/tabs@main/3.jpg" alt="" role="img">
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="owl-text">
-                    <span class="spanwithh3tag" aria-label="" role="row">Cottage Gardens</span>
+  <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+  <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
 
-                    <p role="rowgroup"><a href="#" id="" tabindex="-1">Know More</a> Since cottage gardens can be small, the look of the surrounding fence is an important decision. Traditional fences were lower than are typical today.</p>
-
-
-            </div>
-        </div>
-    </div>
-</div></div>
-
-
-<div class="owl-item" id="owl-carousel-4" role="option" tabindex="-1" aria-selected="false" style="width: 1170px; margin-right: 10px;"><div class="item" data-order="4">
-    <div class="row">
-        <div class="col-sm-8">
-            <div class="owl-carousel-img">
-                    <img src="https://cdn.jsdelivr.net/gh/linuxguist/tabs@main/4.jpg" alt="" role="img">
-            </div>
-        </div>
-        <div class="col-sm-4">
-            <div class="owl-text">
-                    <span class="spanwithh3tag" aria-label="" role="row">Rock Gardens</span>
-
-                    <p role="rowgroup"><a href="#" id="" tabindex="-1">Know More</a> Where would a rock garden look best in your yard? Is the site in sun or shade? Will plants need regular water, or will it be a drought-tolerant landscape? Don’t be afraid to think outside the box. Even front yard can have rock garden.</p>
-
-
-            </div>
-        </div>
-    </div>
-</div></div>
-
-
-</div></div>
-
-
-</div>
-
-</div>
-                    </div>
-                </div>
-        </div>
-    </section>
-
-
-<script src="jquery-1.10.2.js" type="text/javascript"></script>
-
-<script type="text/javascript" src="owl.carousel.js"></script>
-
-<script type="text/javascript" src="Carousel.js"></script>
-
-
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-"use strict";
-$(".owl-item").owlCarousel( {
-        loop: true,
-        center: true,
-        items: 1,
-        margin: 30,
-        autoplay: true,
-        dots:false,
-        nav:true,
-        autoplayTimeout: 4000,
-    autoplayHoverPause:true,
-    stopOnHover:true,
-        smartSpeed: 850,
-        // navText: ['<i class="fa fa-arrow-alt-circle-left" style="font-size:30px;color:blue"></i>','<i class="fa fa-arrow-alt-circle-right" style="font-size:30px;color:blue"></i>'],
-        responsive: {
-            0: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            1170: {
-                items: 1
-            }
-        }
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      <script>
+        $(document).ready(function() {
+          const carouselContainer = $('.carousel-container');
+          const carouselSlides = $('.carousel-slide');
+          let currentSlide = 0;
+          let isSliding = false;
+          
+          function showSlide(index) {
+            if (isSliding) return;
+            isSliding = true;
+            
+            carouselSlides.removeClass('active-slide');
+            carouselSlides.eq(index).addClass('active-slide');
+            
+            carouselContainer.css('transform', `translateX(-${index * 100}%)`);
+            
+            // Wait for the sliding animation to complete before resetting the flag
+            setTimeout(function() {
+              isSliding = false;
+            }, 600); // The same duration as the CSS transition
+          }
+          
+          function showNextSlide() {
+            currentSlide = (currentSlide + 1) % carouselSlides.length;
+            showSlide(currentSlide);
+          }
+          
+          function showPreviousSlide() {
+            currentSlide = (currentSlide - 1 + carouselSlides.length) % carouselSlides.length;
+            showSlide(currentSlide);
+          }
+          
+          $('#nextBtn').on('click', function() {
+            showNextSlide();
+          });
+          
+          $('#prevBtn').on('click', function() {
+            showPreviousSlide();
+          });
+          
+          // Automatically switch slides every 5 seconds
+          setInterval(showNextSlide, 5000);
+          
+          // Show the initial slide
+          showSlide(currentSlide);
+        });
+      </script>
+      
+      // The JavaScript code for the carousel sliding effect (as shown in the previous response)
     });
-});    
-
-// owl.trigger('owl.play',2000);
-
-</script> 
-
-
-
-{% comment %} 
-<div style="justify-content: center; text-align: center; align-items: center;">
-    <div class="wrapper">
-       <i id="left" class="fa-solid fa-angle-left"></i>
-       <div class="carousel">
-        
-         <img src="assets/8.jpg" alt="img" draggable="false">
-         <img src="assets/8.jpg" alt="img" draggable="false">
-         <img src="assets/8.jpg" alt="img" draggable="false">
-         <img src="assets/8.jpg" alt="img" draggable="false">
-         
-
-         
-       </div>
-       <i id="right" class="fa-solid fa-angle-right"></i>
-     </div>
-   </div>
-
+  </script>
 </body>
-</html> {% endcomment %}
-
-<img src="assets/8.jpg" alt="img" draggable="false">
-        
-<img src="assets/8.jpg" alt="img" draggable="false">
-<img src="assets/8.jpg" alt="img" draggable="false">
-<img src="assets/8.jpg" alt="img" draggable="false">
-
-
-
-.wrapper{
-    display: flex;
-    max-width: 1200px;
-    position: relative;
-    /* vertical-align: top;
-    align-items: center;
-    justify-content: center;
-    text-align: center; */
-    margin-left: 200px;
-  
-  
-  }
-  .wrapper i{
-    top: 50%;
-    height: 44px;
-    width: 44px;
-    color: #343F4F;
-    cursor: pointer;
-    font-size: 1.15rem;
-    position: absolute;
-    text-align: center;
-    line-height: 44px;
-    background: #fff;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.1s linear;
-  }
-  .wrapper i:active{
-    transform: translateY(-50%) scale(0.9);
-  }
-  .wrapper i:hover{
-    background: #f2f2f2;
-  }
-  .wrapper i:first-child{
-    left: -22px;
-    /* display: none; */
-  }
-  .wrapper i:last-child{
-    right: -22px;
-  }
-  .wrapper .carousel{
-    font-size: 0px;
-    cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-  }
-  .carousel.dragging{
-    cursor: grab;
-    scroll-behavior: auto;
-  }
-  .carousel.dragging img{
-    pointer-events: none;
-  }
-  .carousel img{
-    height: 400px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width:450px;
-    /* width: calc(100% / 3); */
-  }
-  .carousel img:first-child{
-    margin-left: 10px;
-  }
-  .carousel {
-    display: flex;
-    width: 100%;
-    transition: transform 0.3s ease-in-out;
-  }
- .carousel c1{
-    height: 340px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 3);
-  }
-
-  .c1{
-    height: 340px;
-    object-fit: cover;
-    user-select: none;
-    margin-left: 14px;
-    width: calc(100% / 3);
-  }
+</html>

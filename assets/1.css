@@ -1,8 +1,33 @@
+#navbar.transparent {
+    background-color: transparent;
+    color: #fff;
+    height: 83px;
+}
+
+#navbar.solid {
+    background-color: #fff;
+    color: black;
+    z-index: 1000000;
+    height: 83px;
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+    /* You can adjust the value to increase or decrease spacing */
+}
+  nav ul li {
+            -webkit-transition: background-color .3s;
+            transition: background-color .3s;
+            float: left;
+            padding: 0;
+            margin-right:15px;
+}
+
 .a1{
     background-color: #092D58;
-    /* border-bottom-left-radius: 400px;
-    border-bottom-right-radius: 400px; */
-    height: 1300px;
+    border-bottom-left-radius: 400px;
+    border-bottom-right-radius: 400px;
+    height: 1350px;
 }
 .image{
     border-top-right-radius:400px;
@@ -27,10 +52,9 @@
     margin-left: 650px;
     width:300px;
 }
-.a5{
+.hover-button{
     border-color: white;
     color: white;
-    background-color: #092D58;
     padding-left:20px;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -38,10 +62,17 @@
     font-weight: 500;
     line-height: 16px;
     cursor: pointer;
-    transition: background 0.5s;
-    /* background: linear-gradient(transparent, transparent 50%, #fff 50%, #fff); */
+    background-color: #092D58;
+    /* background: linear-gradient(to bottom, #092D58, #092D58 50%, #FFFFFF 50%, #FFFFFF);
+    color: #FFFFFF;
+    transition : background 0.3s ease; */
     
 }
+
+/* .a5:hover{
+    background-position:0 100%;
+} */
+
 .a6{
     margin-left:650px;
     margin-right: 10px;
@@ -76,8 +107,10 @@
 
 .a10{
     color: #CFD5DD;
-    margin-left:15px;
-    margin-top: 25px;
+    margin-left:10px;
+    margin-top: 20px;
+    width:100px;
+    align-items: center;
 }
 .a11{
     color: #CFD5DD;
@@ -99,7 +132,7 @@
     
   }
 .a13{
- margin-left: 60px;
+ margin-left: 0px;
  margin-right: 10px;
  width: 80px;
 } 
@@ -116,6 +149,7 @@ position: absolute;
   
     width: 600px;
     height: 540px;
+    margin-right:540px;
    
 }
   
@@ -166,6 +200,7 @@ position: absolute;
     font-size: 14px;
     line-height: 20px;
     color:#fff;
+    margin-left:10px;
     font-family: 'Nunito', sans-serif;
 }
 .b2{
@@ -279,3 +314,53 @@ position: absolute;
   #slide3 {
     background-color:#092d58;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .carousel-container {
+  /* display: flex; */
+  overflow: hidden;
+  width: 1200px; /* Set the desired width of the carousel container */
+
+}
+
+.carousel-slide {
+  /* position: relative; */
+  
+}
+
+.carousel-slide img {
+  width: 500px;
+  height: auto;
+}
+
+.text-container {
+  /* position:absolute; */
+  top: 0;
+  right: 0;
+  padding: 10px;
+  margin-left: 150px;
+  background-color: white ;/* Adjust the background color and opacity as needed */
+  color: black;
+  height:310px;
+}
+
+.text-container p {
+  margin: 0px;
+}
+
+
+.abc{
+    width:10px;
+    margin-left:1150px;
+}
